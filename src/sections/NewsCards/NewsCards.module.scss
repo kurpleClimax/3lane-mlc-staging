@@ -1,0 +1,58 @@
+.customCheckbox {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0.0938rem solid #f9bd19;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  position: relative;
+}
+
+.customCheckbox:checked {
+  background-color: #f9bd19;
+  border-color: #f9bd19;
+}
+
+.customCheckbox:checked::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none"><path d="M5.31177 10.8661L2.94121 8.49556C2.69713 8.2515 2.30141 8.2515 2.05732 8.49556C1.81325 8.73962 1.81325 9.13538 2.05732 9.37944L4.86982 12.1919C5.11391 12.436 5.50963 12.436 5.75371 12.1919L12.6287 5.31694C12.8728 5.07286 12.8728 4.67714 12.6287 4.43306C12.3846 4.18898 11.9889 4.18898 11.7448 4.43306L5.31177 10.8661Z" fill="white"/></svg>')
+    center / contain no-repeat;
+  background-size: 100% 100%;
+  content: "";
+}
+
+.customCheckbox::before {
+  content: "" !important;
+}
+
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   flex: 1 1 auto;
+// }
+
+// .gridBox {
+//   grid-column: span 2;
+// }
+// @media (min-width: 768px) {
+//   .gridBox:last-child:nth-child(2n - 1) {
+//     grid-column-end: -2;
+//   }
+// }
+
+// @media (max-width: 767px) {
+//   .grid {
+//     grid-template-columns: 1fr;
+//   }
+//   .gridBox {
+//     grid-column: span 1;
+//   }
+// }

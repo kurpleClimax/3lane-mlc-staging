@@ -1,0 +1,17 @@
+<svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="MLC-Global-Icon-Hamburger" filter="url(#filter0_d_8035_7214)">
+<path id="Vector" d="M5.2998 11.4016C5.2998 10.4075 6.1057 9.60156 7.0998 9.60156H41.8998C42.8939 9.60156 43.6998 10.4075 43.6998 11.4016C43.6998 12.3957 42.8939 13.2016 41.8998 13.2016H7.0998C6.1057 13.2016 5.2998 12.3957 5.2998 11.4016ZM5.2998 23.4016C5.2998 22.4075 6.1057 21.6016 7.0998 21.6016H41.8998C42.8939 21.6016 43.6998 22.4075 43.6998 23.4016C43.6998 24.3956 42.8939 25.2016 41.8998 25.2016H7.0998C6.1057 25.2016 5.2998 24.3956 5.2998 23.4016ZM7.0998 33.6016C6.1057 33.6016 5.2998 34.4075 5.2998 35.4016C5.2998 36.3956 6.1057 37.2016 7.0998 37.2016H41.8998C42.8939 37.2016 43.6998 36.3956 43.6998 35.4016C43.6998 34.4075 42.8939 33.6016 41.8998 33.6016H7.0998Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_8035_7214" x="-3.5" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8035_7214"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8035_7214" result="shape"/>
+</filter>
+</defs>
+</svg>

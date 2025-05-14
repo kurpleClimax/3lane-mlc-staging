@@ -1,0 +1,14 @@
+.listStyling {
+  ul {
+    @apply list-disc mb-4;
+
+    li {
+      color: var(--Black, #525252);
+      font-family: openSans, sans-serif;
+
+      &:before {
+        background-color: #f9bd19;
+      }
+    }
+  }
+}

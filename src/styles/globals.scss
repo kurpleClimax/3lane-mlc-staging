@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./typography.css";
+
+.container {
+  @apply max-w-screen-xl px-5 lg:mx-auto lg:px-10;
+}
+
+html {
+  font-size: 85% !important;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", "sans-serif";
+}
+
+.button {
+  @apply transition-all ease-in-out font-normal flex items-center justify-between gap-2 py-3 px-6 cursor-pointer text-center w-fit text-p2 focus:outline-none active:outline-none rounded-lg;
+}
+
+.mustard-yellow-filled-button {
+  @apply button border border-brand-mustard-yellow bg-brand-mustard-yellow text-white hover:bg-brand-mustard-yellow/90 active:bg-brand-mustard-yellow/90;
+}
+
+.mustard-yellow-outline-button {
+  @apply button border border-brand-mustard-yellow bg-transparent text-brand-mustard-yellow hover:bg-brand-mustard-yellow active:bg-brand-mustard-yellow hover:text-white active:text-white hover:gap-4;
+}
+
+.sky-blue-filled-button {
+  @apply button border border-brand-sky-blue bg-brand-sky-blue text-white hover:bg-brand-sky-blue/90 active:bg-brand-sky-blue/90;
+}
+
+.sky-blue-filled-arrow-right-button {
+  @apply button border border-brand-sky-blue bg-brand-sky-blue text-white hover:bg-brand-sky-blue/90 active:bg-brand-sky-blue/90 hover:gap-4;
+}
+
+.sky-blue-outline-arrow-right-button {
+  @apply button border border-brand-sky-blue bg-transparent text-brand-sky-blue hover:bg-brand-sky-blue active:bg-brand-sky-blue hover:text-white active:text-white hover:gap-4;
+}
+
+.sky-blue-outline-youtube-icon-right-button {
+  @apply button border border-brand-sky-blue bg-transparent text-brand-sky-blue active:text-white hover:gap-4;
+}
+
+.lime-green-filled-arrow-right-button {
+  @apply button border border-brand-lime-green bg-brand-lime-green text-white hover:bg-brand-lime-green/90 active:bg-brand-lime-green/90 hover:gap-4;
+}
+
+.text-stroke-brand-royal-blue {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #1180d0;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.newsSlider-slicklist .slick-list .slick-track .slick-slide {
+  margin-right: 1rem;
+}
+
+.custom-slider > .slick-list > .slick-track > .slick-slide {
+  height: inherit;
+}
+
+.custom-slider > .slick-list > .slick-track > .slick-slide > :first-child {
+  height: 100%;
+}
+
+.custom-slider .slick-list .slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+#slider-project-slider::-webkit-scrollbar,
+#slider-project-slider {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#slider-project-slider {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+#slider-project-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+#slider-project-slider > a,
+#slider-project-slider > div {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+#slider-project-slider.grab-item {
+  cursor: grabbing;
+}
+
+.project-slider-scroll-container::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card-shadow {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.flip-card {
+  perspective: 1000px;
+  position: relative;
+}
+.flip-card-inner {
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.flip-card-front {
+  z-index: 2;
+  background: white;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  background: #54a4db; /* fallback for bg-brand-blue */
+}

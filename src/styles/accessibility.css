@@ -1,0 +1,146 @@
+.accessibility-color-contrast {
+  .bg-brand-darker {
+    background-color: #181818 !important;
+  }
+
+  .bg-brand-royal-blue {
+    background-color: #103064 !important;
+  }
+
+  .bg-brand-teal {
+    background-color: #1e7d90 !important;
+  }
+
+  .bg-brand-warning {
+    background-color: #a70000 !important;
+  }
+
+  .bg-brand-blue {
+    background-color: #668fab !important;
+  }
+
+  .bg-brand-saffron {
+    background-color: #b8932d !important;
+  }
+
+  .bg-brand-green {
+    background-color: #92a444 !important;
+  }
+
+  .bg-brand-neutral {
+    background-color: #cecdcd !important;
+  }
+
+  .bg-brand-neutral-1 {
+    background-color: #bbbbbb !important;
+  }
+
+  .bg-brand-neutral-2 {
+    background-color: #b2c5d3 !important;
+  }
+
+  .bg-brand-neutral-3 {
+    background-color: #9cb5bf !important;
+  }
+
+  .bg-brand-neutral-4 {
+    background-color: #bbb7b5 !important;
+  }
+
+  .bg-brand-neutral-5 {
+    background-color: #b2b0b5 !important;
+  }
+
+  .bg-brand-neutral-6 {
+    background-color: #989595 !important;
+  }
+
+  .bg-brand-neutral-7 {
+    background-color: #bdbdbd !important;
+  }
+
+  .bg-brand-blue-sky {
+    background-color: #217ebb !important;
+  }
+
+  .bg-brand-orange {
+    background-color: #c47815 !important;
+  }
+
+  .bg-brand-turquoise {
+    background-color: #228196 !important;
+  }
+
+  .bg-brand-cerulean {
+    background-color: #125767 !important;
+  }
+
+  .bg-brand-indigo {
+    background-color: #113951 !important;
+  }
+
+  .bg-brand-dark-grey {
+    background-color: #363836 !important;
+  }
+
+  .bg-brand-navy {
+    background-color: #091722 !important;
+  }
+
+  .bg-brand-gray-pale {
+    background-color: #d0cfcf !important;
+  }
+
+  .bg-brand-warning {
+    background-color: #b10000 !important;
+  }
+
+  .bg-brand-grayish {
+    background-color: #383636 !important;
+  }
+
+  .bg-brand-gray-dark {
+    background-color: #4f4f4f !important;
+  }
+}
+
+.accessibility-highlight-links {
+  a,
+  button {
+    background: #464646 !important;
+    color: #fff !important;
+  }
+}
+
+.accessibility-letter-spacing {
+  &-1 {
+    * {
+      letter-spacing: 0.06em !important;
+    }
+  }
+
+  &-2 {
+    * {
+      letter-spacing: 0.12em !important;
+    }
+  }
+}
+
+.accessibility-cursor-size {
+  &-1 {
+    * {
+      cursor: url("/images/cursor-1.png"), default !important;
+    }
+  }
+
+  &-2 {
+    * {
+      cursor: url("/images/cursor-2.png"), default !important;
+    }
+  }
+}
+
+.accessibility-pause-animations * {
+  transition: none !important;
+  animation: none !important;
+}

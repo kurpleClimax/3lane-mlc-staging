@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./typography.css";
+
+.container {
+  @apply max-w-screen-xl px-5 lg:mx-auto lg:px-10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", "sans-serif";
+}
+
+@layer base {
+  html {
+    font-size: 80%;
+  }
+  @media (min-width: 1536px) {
+    html {
+      font-size: 0.85vw !important;
+    }
+    .container,
+    .max-w-screen-xl {
+      max-width: 90vw !important;
+    }
+  }
+}

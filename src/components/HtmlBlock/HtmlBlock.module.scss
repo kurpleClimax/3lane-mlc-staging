@@ -1,0 +1,151 @@
+.htmlBlock {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-brand-gray font-normal;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  p {
+    @apply text-p2 text-brand-gray;
+  }
+
+  strong {
+    @apply text-p2 text-brand-gray font-bold;
+    a {
+      @apply text-brand-gray;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    @apply mb-4;
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  ul {
+    @apply list-disc mb-5;
+
+    li {
+      color: var(--Black, #767769);
+      font-family: AcuminPro, sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      font-weight: 400;
+      position: relative;
+      padding-left: 1.75rem;
+
+      &::marker {
+        content: "";
+      }
+
+      &:before {
+        background-color: #767769;
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        display: block;
+        height: 0.5rem;
+        width: 0.5rem;
+        border-radius: 9999px;
+        content: "";
+      }
+    }
+  }
+
+  ol {
+    margin-bottom: 1.25rem;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    text-align: left;
+
+    li {
+      counter-increment: my-awesome-counter;
+      color: #767769;
+      font-family: "Libre Franklin";
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+      position: relative;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding-left: 1.75rem;
+      font-weight: 400;
+
+      &:before {
+        content: counter(my-awesome-counter);
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+        color: var(--White, #767769);
+        font-family: openSans, sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.75rem;
+      }
+    }
+  }
+
+  a {
+    @apply underline text-p2 text-brand-gray;
+  }
+
+  u {
+    text-underline-offset: 0.25rem;
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+  td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    vertical-align: top;
+
+    @media (max-width: 1279px) {
+      display: block;
+      &:has(> strong) {
+        @apply text-brand-gray;
+      }
+    }
+  }
+
+  figure {
+    @apply relative mb-6;
+    width: 100% !important;
+
+    img {
+      @apply w-full;
+    }
+
+    figcaption {
+      @apply absolute right-8 bottom-8 text-base font-light;
+    }
+  }
+}

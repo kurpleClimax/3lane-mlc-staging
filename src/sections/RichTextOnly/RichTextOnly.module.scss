@@ -1,0 +1,165 @@
+.listStyles {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-10 mb-10;
+    display: inline-block;
+
+    &[style*="text-align: center"] {
+      width: 100%;
+    }
+  }
+
+  a {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+    text-decoration-line: underline;
+    font-family: "Lato", sans-serif;
+    @apply text-[1.1rem];
+    display: inline-block;
+  }
+
+  p {
+    display: inline-block;
+
+    &[style*="text-align: center"] {
+      width: 100%;
+    }
+  }
+
+  ul li:not(:last-child),
+  ol li:not(:last-child),
+  p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    font-family: "Lato", sans-serif;
+
+    @apply text-[1.1rem] lg:text-[1.25rem];
+    a {
+      font-style: normal;
+      font-weight: 700;
+      font-family: "Lato", sans-serif;
+      line-height: 32px; /* 144.444% */
+      text-decoration-line: underline;
+      @apply text-[1.1rem] lg:text-[1.25rem];
+      position: unset !important;
+    }
+  }
+
+  a {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    line-height: 28px; /* 144.444% */
+    text-decoration-line: underline;
+    @apply text-[1.1rem];
+  }
+
+  ol,
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    @media (max-width: 768px) {
+      padding: 0px 35px 0px 0px;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 30px;
+    }
+
+    li {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ol li {
+    position: relative;
+    font-size: 16px;
+    /* Use CSS grid for spacing between marker and list item contents */
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 20px;
+
+    /* Increment counter */
+    counter-increment: list;
+
+    > *:first-child {
+      position: relative;
+      top: -27px;
+      left: 40px;
+      margin-bottom: 0;
+    }
+
+    ul li {
+      > *:first-child {
+        position: relative;
+        top: 0px;
+        margin-bottom: 32px;
+      }
+    }
+
+    &::before {
+      content: counter(list);
+      width: 32px;
+      height: 32px;
+      background-color: #fdbb30;
+      border-radius: 100%;
+      font-size: 16px;
+      line-height: 29px;
+      font-weight: 500;
+      font-family: "Lato" sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #fff;
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
+    position: relative;
+    margin-left: 20px;
+    font-size: 16px;
+    white-space: normal;
+
+    &::marker {
+      color: #48d3cd;
+      font-size: 20px;
+    }
+    a {
+      white-space: normal;
+      display: inline;
+    }
+  }
+  table {
+    tbody {
+      tr {
+        td {
+          &:first-child {
+            padding-right: 16px;
+            @media screen and (min-width: 1024px) {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

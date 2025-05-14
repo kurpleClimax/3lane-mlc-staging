@@ -1,0 +1,73 @@
+.custom-slider .slider-item {
+  margin-right: 1.25rem;
+}
+
+.custom-slider .slick-list {
+  margin-right: -1.25rem;
+}
+
+.newsSliderStyle {
+  button {
+    &::before {
+      content: "" !important;
+      font-family: unset !important;
+      line-height: unset !important;
+      font-size: unset !important;
+      font-weight: unset !important;
+      color: unset !important;
+      display: block;
+      background-color: #f9b947;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      background-image: url("https://mclsadmin.3lanemarketing.com/wp-content/uploads/2024/05/arrow-left.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      .slick-disabled {
+        opacity: 0.6 !important;
+      }
+    }
+
+    &:first-child {
+      left: -4.375rem !important;
+      z-index: 10;
+
+      @media screen and (max-width: 1024px) {
+        left: -0.625rem !important;
+      }
+
+      @media screen and (min-width: 1024px) and (max-width: 1150px) {
+        left: -2rem !important;
+      }
+    }
+
+    &:last-child {
+      right: 6.25rem !important;
+
+      @media screen and (max-width: 1024px) {
+        right: 0.625rem !important;
+      }
+
+      @media screen and (min-width: 1024px) and (max-width: 1150px) {
+        right: -0.563rem !important;
+      }
+
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.leftButton {
+  @media screen and (min-width: 1536px) {
+    left: -5rem;
+  }
+  @media screen and (min-width: 1440px) and (max-width: 1535px) {
+    left: -4rem;
+  }
+  @media screen and (max-width: 1439px) {
+    left: -2rem;
+  }
+}

@@ -1,0 +1,74 @@
+// SCSS styles for the custom dropdown
+.tabs-dropdown {
+  position: relative;
+  width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #525252;
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.375rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  // Arrow icon
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://mlc-cms.3lanemarketing.com/wp-content/uploads/2025/04/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+    margin-top: 0.25rem;
+  }
+
+  &[data-select-open="true"]::after {
+    transform: translateY(-50%) rotate(180deg);
+    margin-top: -0.25rem;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #1180d0;
+    box-shadow: 0 0 0 3px rgba(17, 128, 208, 0.2);
+    border: 1px solid #d6d6d6;
+  }
+}
+
+.tabs-dropdown-options {
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.375rem;
+  margin-top: 0.25rem;
+  z-index: 20;
+  max-height: 200px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.tabs-dropdown-option {
+  padding: 0.5rem 0.75rem;
+  color: #525252;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  &.selected {
+    background-color: #f5f5f5;
+    color: #525252;
+    font-weight: 600;
+  }
+}
